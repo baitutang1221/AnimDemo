@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ fromDegrees:开始的角度
+ toDegrees： 结束的角度， +表示是正的
+ pivotX： 用于设置旋转时的x轴坐标
+          例: 当值为"50"，表示使用绝对位置定位 当值为"50%"，表示使用相对于控件本身定位 当值为"50%p"，表示使用相对于控件的父控件定位
+ pivotY： 用于设置旋转时的y轴坐标
+ repeatMode: 重复类型有两个值，reverse表示倒序回放，restart表示从头播放
+ repeatCount: 重复次数
+ -->
+
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="1"
+    android:repeatMode="reverse"
+    android:toDegrees="360" />

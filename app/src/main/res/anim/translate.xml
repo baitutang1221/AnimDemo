@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+float fromXDelta:始x轴坐标  ；
+float toXDelta, 止x轴坐标 ；
+float fromYDelta,  始y轴坐标；
+float toYDelta, 止y轴坐标；
+如果view在A(x,y)点 那么动画就是从B点(x+fromXDelta, y+fromYDelta)点移动到C点(x+toXDelta,y+toYDelta)点.
+
+横向为X轴，向右为正方向，右移的话，toXDelta > fromXDelta
+纵向为Y轴，向下为正方向，上移的话， fromYDelta > toYDelta
+-->
+
+<!--注意：虽然移动了，但是真正的位置没有变，点击事件还是监听原来的位置；-->
+
+
+<!--toYDelta="-200%" : 表示向上平移自身高度2倍-->
+<!--toXDelta="50%" ： 表示向右平移自身宽度的一半-->
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fillAfter="true"
+    android:fromXDelta="0%"
+    android:fromYDelta="0%"
+    android:toXDelta="50%"
+    android:toYDelta="-200%" />
+
+
+
+
+

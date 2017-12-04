@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    float fromXScale :始x轴坐标  ；
+    float toXScale, 止x轴坐标 ；
+    float fromYScale,  始y轴坐标；
+    此处表示，横轴扩大2倍，数轴缩小一半；
+
+    float pivotX ： 缩放的中轴点的X坐标，距离自身左边缘的位置；
+    float pivotY ： 缩放的中轴点的Y坐标，距离自身上边缘的位置；
+    此处表示从中轴点在左上角；
+    如果要从控件正中心缩放，都设置为“50%”；
+
+-->
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:fromXScale="1.0"
+    android:fromYScale="1.0"
+    android:pivotX="0%"
+    android:pivotY="0%"
+    android:toXScale="2.0"
+    android:toYScale="0.5" />
